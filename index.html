@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+        <div id="game-play">
+            <div class="timer-container">
+                <span id="minutes" class="timer">00</span> 
+                : 
+                <span id="seconds" class="timer">00</span>
+            </div>
+            <div id="game-btns">
+                <button id="start-timer" onclick="start()">Play Game</button>
+                <button id="pause-timer" onclick="pause()">Pause Timer</button>
+            </div>
+            <button id="reset-btn" onclick="reset()">Reset Game</button>
+        </div>
+        <div class="container">
+            <div id="home" class="score-container">
+                <h3>HOME</h3>
+                <div id="home-score" class="score">0</div>
+                <div class="increment-btns-container">
+                    <button id="home-one" class="score-btn" onclick="home_increment(1)">+1</button>
+                    <button id="home-two" class="score-btn" onclick="home_increment(2)">+2</button>
+                    <button id="home-three" class="score-btn" onclick="home_increment(3)">+3</button>
+                </div> 
+            </div>
+            <div id="guest"  class="score-container">
+                <h3>GUEST</h3>
+                <div id="guest-score" class="score">0</div>
+                <div class="increment-btns-container">
+                    <button id="guest-one" class="score-btn" onclick="guest_increment(1)">+1</button>
+                    <button id="guest-two" class="score-btn" onclick="guest_increment(2)">+2</button>
+                    <button id="guest-three" class="score-btn" onclick="guest_increment(3)">+3</button>
+                </div> 
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
