@@ -1,4 +1,5 @@
-# co56a44d582442a426e1342b1
+## Site is live at 
+https://nickpaterson.github.io/Basketball-Timer/
 
 ## About Scrimba
 
